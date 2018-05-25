@@ -1,11 +1,11 @@
 
 cmake_minimum_required(VERSION 3.6) 
 
-project(gx_core)
+project(gmake)
 
 add_definitions(-std=c++11)
 
-include_directories(../include)
+include_directories(../src)
 aux_source_directory(../src GX_SRC)
 
-add_library(gx_core STATIC ${GX_SRC})
+add_executable(gmake ${GX_SRC})
